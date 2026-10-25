@@ -40,7 +40,7 @@ export const Skills: React.FC = () => {
   });
 
   return (
-    <section id="skills" className="py-24 relative border-t-2 border-[#111111] bg-[#ebebea] text-[#111111]">
+    <section id="skills" className="py-24 relative text-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
@@ -106,7 +106,7 @@ export const Skills: React.FC = () => {
           {filteredCategories.map((category) => (
             <div
               key={category.title}
-              className="neo-box rounded-xl bg-white p-5 flex flex-col justify-between"
+              className="neo-box tech-bracket rounded-xl bg-white p-5 flex flex-col justify-between"
             >
               <div>
                 {/* Category Header */}

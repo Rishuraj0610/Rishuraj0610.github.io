@@ -224,15 +224,15 @@ const CSS = `
 .mph-reel{grid-column:5;display:flex;align-items:center;gap:.8em;font-size:.8em;text-align:right;}
 .mph-reel i{display:block;width:1.9em;height:1.9em;border-radius:50%;background:var(--mph-accent);border:.12cqw solid var(--mph-ink);flex:none;}
 
-.mph-h1{position:absolute;left:8.8%;top:17.5%;margin:0;font-family:var(--mph-display);font-weight:900;font-size:6.5cqw;line-height:.93;letter-spacing:-.045em;text-transform:uppercase;color:var(--mph-ink);}
+.mph-h1{position:absolute;left:8.8%;top:17.5%;margin:0;font-family:var(--mph-display);font-weight:900;font-size:5.8cqw;line-height:.94;letter-spacing:-.035em;text-transform:uppercase;color:var(--mph-ink);}
 .mph-line{display:block;width:max-content;white-space:nowrap;position:relative;}
 .mph-ch{display:inline-block;transition:transform .35s cubic-bezier(.3,1.6,.5,1),color .2s;}
 .mph-ch:hover{transform:translateY(-.08em) rotate(-4deg);color:var(--mph-accent);}
 .mph-arrow{display:inline-block;width:.6em;height:.6em;margin:0 .06em 0 .1em;vertical-align:-.02em;}
 .mph-arrow path{stroke:currentColor;stroke-width:15;fill:none;stroke-linecap:square;}
-.mph-badge{position:absolute;top:-.02em;left:calc(100% + .55em);font-family:var(--mph-sans);font-size:.2em;font-weight:800;letter-spacing:0;line-height:1;text-transform:none;border:.13cqw solid var(--mph-ink);border-radius:50%;padding:.75em 1.15em;transform:rotate(-9deg);transition:background .25s,transform .4s cubic-bezier(.3,1.6,.5,1);cursor:default;}
+.mph-badge{position:absolute;top:-.02em;left:calc(100% + .55em);font-family:var(--mph-sans);font-size:.22em;font-weight:800;letter-spacing:.02em;line-height:1;text-transform:uppercase;border:.13cqw solid var(--mph-ink);border-radius:999px;padding:.55em .95em;transform:rotate(-6deg);transition:background .25s,transform .4s cubic-bezier(.3,1.6,.5,1);cursor:default;white-space:nowrap;}
 .mph-badge sup{font-size:.7em;margin-left:.1em;}
-.mph-badge:hover{background:var(--mph-accent);transform:rotate(6deg) scale(1.08);}
+.mph-badge:hover{background:var(--mph-accent);transform:rotate(4deg) scale(1.06);}
 .mph-swash{position:relative;display:inline-block;}
 .mph-swash svg{position:absolute;left:-.95em;top:.3em;width:2.55em;height:.72em;overflow:visible;pointer-events:none;}
 .mph-swash path{fill:none;stroke:var(--mph-ink);stroke-width:.2cqw;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0;animation:mph-draw 1.6s .5s cubic-bezier(.6,0,.2,1) both;}

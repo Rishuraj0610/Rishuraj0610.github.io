@@ -127,7 +127,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenResume }) => {
   };
 
   return (
-    <section id="contact" className="py-24 relative border-t-2 border-[#111111] bg-[#ebebea] text-[#111111]">
+    <section id="contact" className="py-24 relative text-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Recruiter Resume Call-to-Action Banner (21st.dev Style) */}
         <div className="mb-20 rounded-2xl border-2 border-[#111111] bg-white p-8 sm:p-12 shadow-[6px_6px_0px_#111111] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">

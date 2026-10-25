@@ -19,7 +19,7 @@ export const Blog: React.FC = () => {
   };
 
   return (
-    <section id="blog" className="py-24 relative border-t-2 border-[#111111] bg-[#ebebea] text-[#111111]">
+    <section id="blog" className="py-24 relative text-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-12">
@@ -44,7 +44,7 @@ export const Blog: React.FC = () => {
           {PORTFOLIO_DATA.blogPosts.map((post) => (
             <article
               key={post.id}
-              className="neo-box p-6 rounded-xl bg-white flex flex-col justify-between group cursor-pointer"
+              className="neo-box tech-bracket p-6 rounded-xl bg-white flex flex-col justify-between group cursor-pointer"
               onClick={() => setSelectedPost(post)}
             >
               <div>

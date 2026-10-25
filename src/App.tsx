@@ -12,6 +12,7 @@ import { Blog } from './components/Blog';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ResumeModal } from './components/ResumeModal';
+import { CustomCursor } from './components/CustomCursor';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<string>('hero');
@@ -51,7 +52,10 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#ebebea] text-[#111111] flex flex-col font-sans selection:bg-[#5fb57a]/40 selection:text-[#111111]">
+    <div className="min-h-screen text-[#111111] flex flex-col font-sans selection:bg-[#5fb57a]/40 selection:text-[#111111]">
+      {/* Precision Interactive Cursor Follower */}
+      <CustomCursor />
+
       {/* Sticky Navigation (Slides down on scroll) */}
       <Navbar
         activeSection={activeSection}

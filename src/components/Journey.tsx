@@ -11,7 +11,7 @@ import {
 
 export const Journey: React.FC = () => {
   return (
-    <section id="journey" className="py-24 relative border-t-2 border-[#111111] bg-[#ebebea] text-[#111111]">
+    <section id="journey" className="py-24 relative text-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">

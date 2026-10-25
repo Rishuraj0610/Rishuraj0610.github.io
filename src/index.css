@@ -34,6 +34,10 @@
     color: var(--paper-ink);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    background-image: 
+      linear-gradient(to right, rgba(17, 17, 17, 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(17, 17, 17, 0.035) 1px, transparent 1px);
+    background-size: 36px 36px;
   }
 
   /* Custom 21st.dev styled scrollbar */
@@ -59,17 +63,38 @@
   font-family: var(--font-mono);
 }
 
+/* Ensure all interactive controls have crisp pointer cursor */
+button,
+a,
+input[type="submit"],
+input[type="button"],
+[role="button"],
+.neo-btn,
+.stamp-badge {
+  cursor: pointer;
+}
+
 /* 21st.dev Editorial Brutalist Cards & Buttons */
 .neo-box {
   background: var(--paper-card);
   border: 1.5px solid var(--paper-border);
   box-shadow: 4px 4px 0px var(--paper-border);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.neo-box:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--paper-border);
 }
 
 .neo-box-sm {
   background: var(--paper-card);
   border: 1.5px solid var(--paper-border);
   box-shadow: 2.5px 2.5px 0px var(--paper-border);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.neo-box-sm:hover {
+  transform: translate(-1.5px, -1.5px);
+  box-shadow: 4px 4px 0px var(--paper-border);
 }
 
 .neo-btn {
@@ -84,6 +109,35 @@
 .neo-btn:active {
   transform: translate(1px, 1px);
   box-shadow: 1px 1px 0px var(--paper-border);
+}
+
+/* Technical Registration Crop Marks for High-Design Aesthetics */
+.tech-bracket {
+  position: relative;
+}
+.tech-bracket::before {
+  content: "⌜";
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(17, 17, 17, 0.35);
+  line-height: 1;
+  pointer-events: none;
+}
+.tech-bracket::after {
+  content: "⌟";
+  position: absolute;
+  bottom: 5px;
+  right: 7px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(17, 17, 17, 0.35);
+  line-height: 1;
+  pointer-events: none;
 }
 
 .stamp-badge {

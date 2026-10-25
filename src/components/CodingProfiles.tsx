@@ -23,7 +23,7 @@ export const CodingProfiles: React.FC = () => {
   };
 
   return (
-    <section id="profiles" className="py-24 relative border-t-2 border-[#111111] bg-[#ebebea] text-[#111111]">
+    <section id="profiles" className="py-24 relative text-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-12">
@@ -48,7 +48,7 @@ export const CodingProfiles: React.FC = () => {
           {PORTFOLIO_DATA.codingProfiles.map((profile) => (
             <div
               key={profile.platform}
-              className="neo-box p-6 rounded-xl bg-white flex flex-col justify-between group"
+              className="neo-box tech-bracket p-6 rounded-xl bg-white flex flex-col justify-between group"
             >
               <div>
                 <div className="flex items-center justify-between mb-4 pb-3 border-b-[1.5px] border-[#111111]">

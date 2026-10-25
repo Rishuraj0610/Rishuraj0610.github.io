@@ -29,7 +29,7 @@ export const Projects: React.FC = () => {
   });
 
   return (
-    <section id="projects" className="py-24 relative border-t-2 border-[#111111] bg-[#ebebea] text-[#111111]">
+    <section id="projects" className="py-24 relative text-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
@@ -85,7 +85,7 @@ export const Projects: React.FC = () => {
 
         {/* Spotlight 1: GrowthPilot AI (Multi-Agent Commerce Copilot) */}
         {filteredProjects.some((p) => p.id === 'growthpilot-ai') && (
-          <div className="mb-12 rounded-2xl border-2 border-[#111111] bg-white p-6 sm:p-10 shadow-[6px_6px_0px_#111111] relative overflow-hidden group">
+          <div className="tech-bracket mb-12 rounded-2xl border-2 border-[#111111] bg-white p-6 sm:p-10 shadow-[6px_6px_0px_#111111] relative overflow-hidden group">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
               <div className="lg:col-span-12 space-y-4">
                 <div className="flex flex-wrap items-center gap-2">
@@ -202,7 +202,7 @@ export const Projects: React.FC = () => {
 
         {/* Spotlight 2: DocuMind (Full-Stack Hybrid RAG & NLP Suite) */}
         {filteredProjects.some((p) => p.id === 'documind-ai') && (
-          <div className="mb-14 rounded-2xl border-2 border-[#111111] bg-white p-6 sm:p-10 shadow-[6px_6px_0px_#111111] relative overflow-hidden group">
+          <div className="tech-bracket mb-14 rounded-2xl border-2 border-[#111111] bg-white p-6 sm:p-10 shadow-[6px_6px_0px_#111111] relative overflow-hidden group">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
               <div className="lg:col-span-12 space-y-4">
                 <div className="flex flex-wrap items-center gap-2">
@@ -317,7 +317,7 @@ export const Projects: React.FC = () => {
             .map((project) => (
               <div
                 key={project.id}
-                className="neo-box rounded-xl bg-white p-6 sm:p-7 flex flex-col justify-between group"
+                className="neo-box tech-bracket rounded-xl bg-white p-6 sm:p-7 flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">

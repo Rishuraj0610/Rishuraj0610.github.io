@@ -16,7 +16,7 @@ export const Achievements: React.FC = () => {
   const { certifications, achievements } = PORTFOLIO_DATA;
 
   return (
-    <section id="achievements" className="py-24 relative border-t-2 border-[#111111] bg-[#ebebea] text-[#111111]">
+    <section id="achievements" className="py-24 relative text-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-12">
@@ -82,7 +82,7 @@ export const Achievements: React.FC = () => {
               {certifications.map((cert) => (
                 <div
                   key={cert.id}
-                  className="neo-box p-6 rounded-xl bg-white flex flex-col justify-between"
+                  className="neo-box tech-bracket p-6 rounded-xl bg-white flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-center justify-between gap-3 mb-3 pb-2 border-b-[1.5px] border-[#111111]">
@@ -129,7 +129,7 @@ export const Achievements: React.FC = () => {
               {achievements.map((item) => (
                 <div
                   key={item.id}
-                  className="neo-box p-6 rounded-xl bg-white flex flex-col justify-between"
+                  className="neo-box tech-bracket p-6 rounded-xl bg-white flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-center justify-between gap-2 mb-3 pb-2 border-b-[1.5px] border-[#111111]">

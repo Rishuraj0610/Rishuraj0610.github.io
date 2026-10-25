@@ -6,7 +6,7 @@ export const Education: React.FC = () => {
   const { education } = PORTFOLIO_DATA;
 
   return (
-    <section id="education" className="py-24 relative border-t-2 border-[#111111] bg-[#ebebea] text-[#111111]">
+    <section id="education" className="py-24 relative text-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-14">
@@ -30,7 +30,7 @@ export const Education: React.FC = () => {
         </div>
 
         {/* Education Card */}
-        <div className="max-w-4xl neo-box rounded-2xl bg-white p-6 sm:p-10 shadow-[6px_6px_0px_#111111]">
+        <div className="max-w-4xl neo-box tech-bracket rounded-2xl bg-white p-6 sm:p-10 shadow-[6px_6px_0px_#111111]">
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-6 border-b-[1.5px] border-[#111111]">
             <div className="flex items-start gap-4">
               <div className="w-14 h-14 rounded-xl bg-[#5fb57a] border-2 border-[#111111] flex items-center justify-center text-[#111111] shrink-0 shadow-[2.5px_2.5px_0px_#111111]">

@@ -23,21 +23,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
   const heroProps = {
     height: '100svh',
     minHeight: '520px',
-    index: '23/27',
-    discipline: 'B.Tech CSE 2023–27',
-    tagline: 'Multi-Agent Copilots & Hybrid RAG',
-    collection: ['CGPA 8.21', '2027'] as [string, string],
-    reel: ['Rishu Raj @ 2027', 'NIET Greater Noida'] as [string, string],
-    year: '2027',
-    initials: 'RR',
-    badge: '8.21 CGPA',
-    line2: 'Agentic',
-    line3: 'Engineer',
-    word: 'Build',
-    verticalTag: 'Backend',
+    index: '2023–27',
+    discipline: 'Computer Science & Engineering',
+    tagline: 'Autonomous AI Copilots & Enterprise Backends',
+    collection: ['CGPA: 8.21', 'Class of 2027'] as [string, string],
+    reel: ['Rishu Raj • Software Engineer', 'NIET (AKTU), Greater Noida'] as [string, string],
+    year: 'RISHU',
+    initials: 'RAJ',
+    badge: 'B.TECH CSE',
+    line2: 'SOFTWARE',
+    line3: 'ENGINEER',
+    word: 'BACKEND',
+    verticalTag: 'SYSTEMS',
     bracketed: 'AI',
-    seekingLabel: 'Seeking*',
-    seeking: 'AI & SDE Roles',
+    seekingLabel: 'ROLE FOCUS*',
+    seeking: 'Software & AI Engineering Roles',
     href: '#projects',
     services: [
       'GrowthPilot AI (LangGraph)',
@@ -48,10 +48,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
       'SmartCampus NIET Hub',
     ],
     greetings: [
-      "Hi! I'm Rishu Raj.",
-      'B.Tech CSE student (Batch 2023–2027) at NIET.',
-      'Specializing in Agentic AI & Hybrid RAG.',
-      'Open to Software & AI Engineering roles!',
+      "Hello! I'm Rishu Raj.",
+      "Software Engineer specializing in Agentic AI & Systems.",
+      "B.Tech CSE student (2023–2027) with an 8.21 CGPA at NIET.",
+      "Actively exploring Software Engineering & AI Developer roles.",
     ],
     paper: '#ebebea',
     ink: '#111111',
@@ -77,8 +77,27 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
       </div>
 
       {/* 2. RECRUITER SPOTLIGHT & INTERACTIVE ARCHITECTURE CONSOLE (21ST.DEV POSTER STYLE) */}
-      <div className="relative border-t-2 border-[#111111] bg-[#ebebea] text-[#111111] py-16 px-4 sm:px-6 lg:px-8">
+      <div className="relative text-[#111111] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
+          {/* Engineering Technical Status Strip */}
+          <div className="mb-6 p-2.5 rounded-lg bg-white border-[1.5px] border-[#111111] shadow-[2px_2px_0px_#111111] flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono-code font-bold">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#5fb57a] border border-[#111111] animate-pulse" />
+              <span className="uppercase text-[#111111]">SYS_STATUS: ACTIVE</span>
+              <span className="text-[#888888]">/</span>
+              <span className="text-[#444444]">B.TECH CSE 2023–2027</span>
+              <span className="text-[#888888]">/</span>
+              <span className="text-[#444444]">NIET (AKTU)</span>
+            </div>
+            <div className="flex items-center gap-3 text-[#555555]">
+              <span className="hidden sm:inline">GEO: 28.4744° N, 77.5040° E</span>
+              <span className="text-[#888888] hidden sm:inline">/</span>
+              <span className="text-[#111111] bg-[#5fb57a]/30 px-2 py-0.5 rounded border border-[#111111]">
+                OPEN TO OPPORTUNITIES
+              </span>
+            </div>
+          </div>
+
           {/* Headline Banner */}
           <div className="max-w-4xl mb-6">
             <div className="space-y-4">

@@ -22,7 +22,7 @@ export const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-24 relative border-t-2 border-[#111111] bg-[#ebebea] text-[#111111]">
+    <section id="about" className="py-24 relative text-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-4xl mb-14">
@@ -49,7 +49,7 @@ export const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left: Bio narrative */}
           <div className="lg:col-span-7 space-y-5 text-[#222222] leading-relaxed text-sm sm:text-base">
-            <div className="neo-box p-6 sm:p-8 rounded-xl bg-white space-y-4">
+            <div className="neo-box tech-bracket p-6 sm:p-8 rounded-xl bg-white space-y-4">
               {about.paragraphs.map((p, idx) => (
                 <p key={idx} className="text-[#333333] font-medium leading-relaxed">
                   {p}

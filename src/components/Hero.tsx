@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
       'DocuMind Hybrid RAG',
       'StutterCare AI (Groq)',
       'CodSoft Python ML Suite',
-      'CodeGuard AST Scanner',
+      'TalentArc AI (Gemini 3-Agent)',
       'SmartCampus NIET Hub',
     ],
     greetings: [
@@ -79,25 +79,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
       {/* 2. RECRUITER SPOTLIGHT & INTERACTIVE ARCHITECTURE CONSOLE (21ST.DEV POSTER STYLE) */}
       <div className="relative text-[#111111] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          {/* Engineering Technical Status Strip */}
-          <div className="mb-6 p-2.5 rounded-lg bg-white border-[1.5px] border-[#111111] shadow-[2px_2px_0px_#111111] flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono-code font-bold">
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#5fb57a] border border-[#111111] animate-pulse" />
-              <span className="uppercase text-[#111111]">SYS_STATUS: ACTIVE</span>
-              <span className="text-[#888888]">/</span>
-              <span className="text-[#444444]">B.TECH CSE 2023–2027</span>
-              <span className="text-[#888888]">/</span>
-              <span className="text-[#444444]">NIET (AKTU)</span>
-            </div>
-            <div className="flex items-center gap-3 text-[#555555]">
-              <span className="hidden sm:inline">GEO: 28.4744° N, 77.5040° E</span>
-              <span className="text-[#888888] hidden sm:inline">/</span>
-              <span className="text-[#111111] bg-[#5fb57a]/30 px-2 py-0.5 rounded border border-[#111111]">
-                OPEN TO OPPORTUNITIES
-              </span>
-            </div>
-          </div>
-
           {/* Headline Banner */}
           <div className="max-w-4xl mb-6">
             <div className="space-y-4">

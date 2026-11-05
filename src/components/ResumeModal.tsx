@@ -80,15 +80,18 @@ FEATURED SOFTWARE & AI ENGINEERING PROJECTS
    • Engineered stateless JWT authentication and text-to-speech audio synthesis.
 
 3. StutterCare AI — Speech Therapy & AI Counselling Platform (Nov 2025 – Apr 2026)
+   Live: https://stutter-therapy-ai-tool.vercel.app/ | GitHub: https://github.com/Rishuraj0610/Stutter-Therapy-AI-Tool
    Tech: Node.js, Express, MySQL, Groq API, Machine Learning, Agile
    • Built in an Agile team of 4 members to support individuals with speech disfluencies.
    • Engineered a low-latency Groq conversational counselling agent providing empathetic feedback.
    • Designed an ML therapy recommendation engine that boosted user exercise completion by 35%.
 
-4. CodeGuard AI — AST Vulnerability & Pull Request Reviewer (2025 – 2026)
-   Tech: Python, FastAPI, Google Gemini API, AST Parser, Bandit, Docker, GitHub API
-   • Intercepts Git pull requests to run Abstract Syntax Tree taint analysis flagging OWASP flaws.
-   • Leverages Google Gemini API to produce automated line-by-line security code review comments.
+4. TalentArc AI — Multi-Agent ATS Placement & Career Optimization Platform (2025 – 2026)
+   Live: https://talentarc-ai.vercel.app/ | GitHub: https://github.com/Rishuraj0610/talentarc-ai
+   Tech: React 19, TypeScript, Node.js, Express, Google Gemini API, Firebase Auth, Cloud Firestore, Redis, Vitest
+   • Architected a production-grade 3-agent parallel deliberation engine (Auditor vs. Advocate debate synthesized by Orchestrator).
+   • Engineered in-memory streaming text extraction (PDF, DOCX) and sliding-window Redis rate limiting benchmarked for 1,000+ concurrent users without crashes.
+   • Delivered a full career suite including Kanban job pipeline with 48h deadline alerts, STAR-method mock interview simulator, and LinkedIn SEO optimizer.
 
 5. SmartCampus NIET — Academic Resource & Notice Hub (2024 – 2025)
    Tech: React 19, TypeScript, Node.js, Express, MongoDB, Redis, WebSockets
@@ -330,10 +333,30 @@ CERTIFICATIONS & HONORS
 
             {/* StutterCare AI */}
             <div className="mb-4">
-              <div className="flex justify-between items-start">
-                <h3 className="font-bold text-[#111111] text-sm">
-                  StutterCare AI &mdash; Speech Therapy &amp; AI Counselling Platform
-                </h3>
+              <div className="flex justify-between items-start flex-wrap gap-1">
+                <div>
+                  <h3 className="font-bold text-[#111111] text-sm">
+                    StutterCare AI &mdash; Speech Therapy &amp; AI Counselling Platform
+                  </h3>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <a
+                      href="https://stutter-therapy-ai-tool.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[10px] font-mono-code font-bold text-[#111111] bg-[#5fb57a] hover:bg-[#4ea569] px-2 py-0.5 rounded transition-colors inline-flex items-center gap-1"
+                    >
+                      Live Demo ↗
+                    </a>
+                    <a
+                      href="https://github.com/Rishuraj0610/Stutter-Therapy-AI-Tool"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[10px] font-mono-code text-[#444444] hover:text-[#111111] underline transition-colors"
+                    >
+                      GitHub Repo ↗
+                    </a>
+                  </div>
+                </div>
                 <span className="font-mono-code text-[11px] font-bold text-[#111111] bg-[#5fb57a] px-2 py-0.5 rounded">
                   Node.js &bull; Express &bull; MySQL &bull; Groq &bull; ML
                 </span>
@@ -344,18 +367,40 @@ CERTIFICATIONS & HONORS
               </ul>
             </div>
 
-            {/* CodeGuard AI */}
+            {/* TalentArc AI */}
             <div className="mb-4">
-              <div className="flex justify-between items-start">
-                <h3 className="font-bold text-[#111111] text-sm">
-                  CodeGuard AI &mdash; AST Vulnerability &amp; Pull Request Reviewer
-                </h3>
+              <div className="flex justify-between items-start flex-wrap gap-1">
+                <div>
+                  <h3 className="font-bold text-[#111111] text-sm">
+                    TalentArc AI &mdash; Multi-Agent ATS Placement &amp; Career Optimization Platform
+                  </h3>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <a
+                      href="https://talentarc-ai.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[10px] font-mono-code font-bold text-[#111111] bg-[#5fb57a] hover:bg-[#4ea569] px-2 py-0.5 rounded transition-colors inline-flex items-center gap-1"
+                    >
+                      Live Demo ↗
+                    </a>
+                    <a
+                      href="https://github.com/Rishuraj0610/talentarc-ai"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[10px] font-mono-code text-[#444444] hover:text-[#111111] underline transition-colors"
+                    >
+                      GitHub Repo ↗
+                    </a>
+                  </div>
+                </div>
                 <span className="font-mono-code text-[11px] font-bold text-[#111111] bg-[#5fb57a] px-2 py-0.5 rounded">
-                  FastAPI &bull; Python AST &bull; Google Gemini &bull; Docker
+                  React 19 &bull; Node.js &bull; Gemini API &bull; Firestore &bull; Redis
                 </span>
               </div>
               <ul className="list-disc list-inside text-[#333333] font-medium text-xs space-y-1 mt-1 pl-1">
-                <li>Automated AST-based static analysis detecting OWASP Top 10 vulnerabilities with contextual refactoring recommendations.</li>
+                <li>Engineered high-concurrency streaming parser &amp; sliding-window Redis rate limiting benchmarked for 1,000+ simultaneous users without crashes.</li>
+                <li>Built a 3-agent parallel deliberation engine (Auditor vs. Advocate debate synthesized by Orchestrator) with 1-click in-place resume fixes.</li>
+                <li>Integrated complete career suite: Kanban pipeline with 48h alerts, STAR-method mock interview simulator, and cold outreach generator.</li>
               </ul>
             </div>
 

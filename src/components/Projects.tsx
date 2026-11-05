@@ -310,7 +310,7 @@ export const Projects: React.FC = () => {
           </div>
         )}
 
-        {/* Project Grid for Other Projects: StutterCare AI, CodSoft ML Suite, CloudScale, CodeGuard, SmartCampus, AlphaForecast */}
+        {/* Project Grid for Other Projects: StutterCare AI, CodSoft ML Suite, CloudScale, TalentArc AI, SmartCampus, AlphaForecast */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects
             .filter((p) => p.id !== 'growthpilot-ai' && p.id !== 'documind-ai')
@@ -378,16 +378,30 @@ export const Projects: React.FC = () => {
                     <ArrowRight className="w-3 h-3" />
                   </button>
 
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-1.5 rounded-lg bg-white border-[1.5px] border-[#111111] shadow-[1.5px_1.5px_0px_#111111] text-[#111111] hover:bg-[#f5f5f4] transition-colors"
-                    aria-label="View on GitHub"
-                    title="GitHub"
-                  >
-                    <Github className="w-4 h-4" />
-                  </a>
+                  <div className="flex items-center gap-2">
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="neo-btn px-2.5 py-1.5 rounded-lg bg-[#111111] hover:bg-[#5fb57a] text-[#5fb57a] hover:text-[#111111] text-[11px] font-bold uppercase tracking-wider flex items-center gap-1 transition-all shadow-[1.5px_1.5px_0px_#111111]"
+                        title="Live Project Demo"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        <span>Live</span>
+                      </a>
+                    )}
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-1.5 rounded-lg bg-white border-[1.5px] border-[#111111] shadow-[1.5px_1.5px_0px_#111111] text-[#111111] hover:bg-[#f5f5f4] transition-colors"
+                      aria-label="View on GitHub"
+                      title="GitHub"
+                    >
+                      <Github className="w-4 h-4" />
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}

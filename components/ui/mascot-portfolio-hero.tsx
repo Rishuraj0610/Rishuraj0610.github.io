@@ -322,7 +322,7 @@ const DEFAULT_SERVICES = [
   "DocuMind Hybrid RAG",
   "StutterCare AI (Groq)",
   "CodSoft Python ML Suite",
-  "CodeGuard AST Scanner",
+  "TalentArc AI (Gemini 3-Agent)",
   "SmartCampus NIET Hub",
 ]
 const DEFAULT_GREETINGS = [

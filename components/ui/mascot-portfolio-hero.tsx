@@ -70,6 +70,7 @@ export type MascotPortfolioHeroProps = {
   paper?: string
   /** Type, rules and the room. */
   ink?: string
+  showRoomGrid?: boolean
   className?: string
 }
 
@@ -147,7 +148,7 @@ type Seg = [number, number, number, number]
  * scaled up about that point. Stretching distorts it, which is fine — it is a
  * room, and a taller screen just gets a taller one.
  */
-function room(): { back: Seg[]; rays: Seg[]; depth: string[] } {
+export function room(): { back: Seg[]; rays: Seg[]; depth: string[] } {
   const x0 = 95
   const x1 = 905
   const y0 = 85
@@ -187,7 +188,7 @@ function room(): { back: Seg[]; rays: Seg[]; depth: string[] } {
   return { back, rays, depth }
 }
 
-const ROOM = room()
+export const ROOM = room()
 
 /** Five irregular petals, closed, as one outline — so the stroke never crosses itself. */
 function flowerPath() {
@@ -211,7 +212,7 @@ const FLOWER = flowerPath()
 /* ----------------------------------------------------------------- styles */
 
 const CSS = `
-.mph-root{position:relative;width:100%;overflow:hidden;isolation:isolate;background:var(--mph-paper);color:var(--mph-ink);container:mph / size;font-family:var(--mph-sans);-webkit-font-smoothing:antialiased;}
+.mph-root{position:relative;width:100%;overflow:hidden;isolation:isolate;background:transparent;color:var(--mph-ink);container:mph / size;font-family:var(--mph-sans);-webkit-font-smoothing:antialiased;}
 .mph-room{position:absolute;inset:0;width:100%;height:100%;display:block;color:var(--mph-ink);pointer-events:none;}
 .mph-room line,.mph-room path{vector-effect:non-scaling-stroke;}
 .mph-stage{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(100cqw,177.78cqh);aspect-ratio:16/9;container:mphs / inline-size;}
@@ -337,7 +338,7 @@ export default function MascotPortfolioHero({
   index = "23/27",
   discipline = "B.Tech CSE 2023–27",
   tagline = "Multi-Agent Copilots & Hybrid RAG",
-  collection = ["CGPA 8.21", "2027"],
+  collection,
   reel = ["Rishu Raj @ 2027", "NIET Greater Noida"],
   year = "2027",
   initials = "RR",
@@ -359,6 +360,7 @@ export default function MascotPortfolioHero({
   accent = "#5fb57a",
   paper = "#ebebea",
   ink = "#111111",
+  showRoomGrid = false,
   className,
 }: MascotPortfolioHeroProps) {
   // Gradient and filter ids are global. Two heroes on one page would otherwise
@@ -536,19 +538,21 @@ export default function MascotPortfolioHero({
     <div ref={rootRef} className={"mph-root" + (className ? " " + className : "")} style={vars}>
       <style>{CSS}</style>
 
-      <svg className="mph-room" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
-        <g stroke="currentColor" strokeWidth="0.8" fill="none" opacity="0.13">
-          {ROOM.back.map((s, i) => (
-            <line key={"b" + i} x1={s[0]} y1={s[1]} x2={s[2]} y2={s[3]} />
-          ))}
-          {ROOM.rays.map((s, i) => (
-            <line key={"r" + i} x1={s[0]} y1={s[1]} x2={s[2]} y2={s[3]} />
-          ))}
-          {ROOM.depth.map((d, i) => (
-            <path key={"d" + i} d={d} />
-          ))}
-        </g>
-      </svg>
+      {showRoomGrid && (
+        <svg className="mph-room" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+          <g stroke="currentColor" strokeWidth="0.8" fill="none" opacity="0.13">
+            {ROOM.back.map((s, i) => (
+              <line key={"b" + i} x1={s[0]} y1={s[1]} x2={s[2]} y2={s[3]} />
+            ))}
+            {ROOM.rays.map((s, i) => (
+              <line key={"r" + i} x1={s[0]} y1={s[1]} x2={s[2]} y2={s[3]} />
+            ))}
+            {ROOM.depth.map((d, i) => (
+              <path key={"d" + i} d={d} />
+            ))}
+          </g>
+        </svg>
+      )}
 
       <div className="mph-stage">
         <header className="mph-top">
@@ -556,11 +560,13 @@ export default function MascotPortfolioHero({
             <b>{index}</b>
             {discipline}
           </span>
-          <span className="mph-brace">
-            {"{"}
-            {collection[0]}/{collection[1]}
-            {"}"}
-          </span>
+          {collection && collection[0] && collection[1] ? (
+            <span className="mph-brace">
+              {"{"}
+              {collection[0]}/{collection[1]}
+              {"}"}
+            </span>
+          ) : null}
           <span className="mph-reel">
             <i aria-hidden="true" />
             <span>

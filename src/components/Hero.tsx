@@ -10,6 +10,7 @@ import {
   Award,
   Github,
   Linkedin,
+  Bot,
 } from 'lucide-react';
 
 interface HeroProps {
@@ -26,7 +27,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
     index: '2023–27',
     discipline: 'Computer Science & Engineering',
     tagline: 'Autonomous AI Copilots & Enterprise Backends',
-    collection: ['CGPA: 8.21', 'Class of 2027'] as [string, string],
     reel: ['Rishu Raj • Software Engineer', 'NIET (AKTU), Greater Noida'] as [string, string],
     year: 'RISHU',
     initials: 'RAJ',
@@ -50,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
     greetings: [
       "Hello! I'm Rishu Raj.",
       "Software Engineer specializing in Agentic AI & Systems.",
-      "B.Tech CSE student (2023–2027) with an 8.21 CGPA at NIET.",
+      "B.Tech CSE student (2023–2027) at NIET.",
       "Actively exploring Software Engineering & AI Developer roles.",
     ],
     paper: '#ebebea',
@@ -106,7 +106,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                   <b>00</b> CANDIDATE DOSSIER
                 </span>
                 <span className="stamp-badge text-[11px] bg-white">
-                  BATCH 2023–2027 &bull; CGPA 8.21 @
+                  BATCH 2023–2027 &bull; NIET CSE @
                 </span>
                 <span className="stamp-badge text-[10px] bg-[#5fb57a]">
                   GCP ARCADE FACILITATOR 2025 @
@@ -122,7 +122,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <strong className="text-[#111111] underline decoration-[#5fb57a] decoration-2">
                   Noida Institute of Engineering and Technology (NIET, Greater Noida)
                 </strong>{' '}
-                (2023–2027 batch, CGPA 8.21/10). Experienced in orchestrating multi-agent state graphs using LangGraph &amp; Groq LLaMA 3.3 70B, building hybrid RAG (BM25 + Cosine) in ChromaDB, and developing REST APIs.
+                (2023–2027 batch). Experienced in orchestrating multi-agent state graphs using LangGraph &amp; Groq LLaMA 3.3 70B, building hybrid RAG (BM25 + Cosine) in ChromaDB, and developing REST APIs.
               </p>
 
               {/* Direct Candidate Highlights */}
@@ -172,6 +172,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                   className="neo-btn px-5 py-2.5 rounded-full bg-[#5fb57a] hover:bg-[#4ea569] text-[#111111] font-bold text-xs uppercase tracking-wider"
                 >
                   Inspect Projects &rarr;
+                </a>
+                <a
+                  href="#agents"
+                  className="neo-btn px-5 py-2.5 rounded-full bg-[#111111] hover:bg-[#222222] text-[#5fb57a] font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 shadow-[2px_2px_0px_#5fb57a]"
+                >
+                  <Bot className="w-3.5 h-3.5 text-[#5fb57a]" />
+                  <span>Interactive AI Agents &rarr;</span>
                 </a>
                 <button
                   onClick={onOpenResume}

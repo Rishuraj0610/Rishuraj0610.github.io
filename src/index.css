@@ -34,10 +34,6 @@
     color: var(--paper-ink);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-    background-image: 
-      linear-gradient(to right, rgba(17, 17, 17, 0.035) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(17, 17, 17, 0.035) 1px, transparent 1px);
-    background-size: 36px 36px;
   }
 
   /* Custom 21st.dev styled scrollbar */

@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
+import { AiAgents } from './components/AiAgents';
 import { Journey } from './components/Journey';
 import { Education } from './components/Education';
 import { Achievements } from './components/Achievements';
@@ -13,6 +14,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ResumeModal } from './components/ResumeModal';
 import { CustomCursor } from './components/CustomCursor';
+import { GlobalGridBackground } from './components/GlobalGridBackground';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<string>('hero');
@@ -24,6 +26,7 @@ export default function App() {
       'about',
       'skills',
       'projects',
+      'agents',
       'journey',
       'education',
       'achievements',
@@ -52,7 +55,10 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen text-[#111111] flex flex-col font-sans selection:bg-[#5fb57a]/40 selection:text-[#111111]">
+    <div className="min-h-screen text-[#111111] flex flex-col font-sans selection:bg-[#5fb57a]/40 selection:text-[#111111] relative">
+      {/* Universal Architectural Perspective Room Grid (Matching First Page Grid Lines Across All Pages) */}
+      <GlobalGridBackground />
+
       {/* Precision Interactive Cursor Follower */}
       <CustomCursor />
 
@@ -63,11 +69,12 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1">
+      <main className="flex-1 relative z-10">
         <Hero onOpenResume={() => setIsResumeOpen(true)} />
         <About />
         <Skills />
         <Projects />
+        <AiAgents />
         <Journey />
         <Education />
         <Achievements />
